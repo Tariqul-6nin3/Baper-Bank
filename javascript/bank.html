@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposite section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-8 mb-12">
+        Let's get some <span class="text-5xl text-indigo-500">Money!!!!</span>
+      </h1>
+    </header>
+    <main class="w-9/12 mx-auto mt-8 bg-green-300 p-16">
+      <div class="grid grid-cols-3 gap-2 text-white">
+        <div class="bg-indigo-600 w-9/12 py-8 px-16 rounded-xl">
+          <p class="text-2xl mb-3">Deposite</p>
+          <h1 class="text-4xl">$<span id="deposite-amount">00</span></h1>
+        </div>
+        <div class="bg-sky-600 w-9/12 py-8 px-16 rounded-xl">
+          <p class="text-2xl mb-3">Withdraw</p>
+          <h1 class="text-4xl">$<span id="withdrawn-amount">00</span></h1>
+        </div>
+        <div class="bg-slate-600 w-9/12 py-8 px-16 rounded-xl">
+          <p class="text-2xl mb-3">Balance</p>
+          <h1 class="text-4xl">$<span id="balance">1250</span></h1>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-5 text-white mt-16">
+        <div class="bg-slate-600 p-12 rounded-xl">
+          <h1 class="text-4xl mb-5">Please Deposite</h1>
+          <input
+            id="deposite-input"
+            class="px-8 py-1 block rounded w-9/12 text-lg text-slate-900"
+            type="text"
+            placeholder="$amount you want to deposite" />
+          <br />
+          <button
+            id="deposite-btn"
+            class="bg-blue-800 px-8 py-3 rounded text-white">
+            Deposite
+          </button>
+        </div>
+        <div class="bg-purple-500 p-12 rounded-xl">
+          <h1 class="text-4xl mb-5">Please Withdraw</h1>
+          <input
+            id="withdraw-field"
+            class="px-8 py-1 block rounded w-9/12 text-lg text-slate-900"
+            type="text"
+            placeholder="$amount you want to withdraw" />
+          <br />
+          <button
+            id="withdraw-btn"
+            class="bg-violet-800 px-8 py-3 rounded text-white">
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/javascript/deposite.js"></script>
+  </body>
+</html>
